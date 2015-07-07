@@ -1,0 +1,3 @@
+# Set the prompt variable. This will be read in by ~/.bashrc on launching bash
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]<%= (@name || @role) %> \[$(tput sgr0)\]\ \[$(tput bold)\]\[$(tput setaf 7)\]<%= @env_name %>\[$(tput sgr0)\] \ \u@<%= @public_hostname %>\n[\w] $ \[$(tput sgr0)\]"
+alias ls="ls -Flach --color"
